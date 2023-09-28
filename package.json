@@ -13,6 +13,9 @@
     "type": "git",
     "url": "git+ssh://git@github.com/ProgramerSalar/React-native-Ecomerce-Frontend.git"
   },
+  "engines": {
+    "node": ">=14.20.1"
+  },
   "author": "",
   "license": "ISC",
   "bugs": {
