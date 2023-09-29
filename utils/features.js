@@ -1,6 +1,7 @@
-import DatauriParser from "datauri/parser.js";
+// import DatauriParser from "datauri/parser.js";
 import path from "path";
 import { createTransport } from "nodemailer";
+import DataURIParser from "datauri/parser.js";
 
 // export const getDataUri = (file) => {
 //   const parser = new DatauriParser();
@@ -8,7 +9,7 @@ import { createTransport } from "nodemailer";
 //   return parser.format(extName, file.buffer);
 // };
 export const getDataUri = (file) => {
-  const parser = new DataUriParser();
+  const parser = new DataURIParser();
   const extName = path.extname(file.originalname).toString();
   return parser.format(extName, file.buffer);
 };
