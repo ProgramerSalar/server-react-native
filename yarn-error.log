@@ -1,0 +1,67 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\Aorus PC\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js
+
+PATH: 
+  C:\Users\Aorus PC\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\Aorus PC\bin;C:\Program Files\OpenLogic\jdk-11.0.19.7-hotspot\bin;C:\Program Files\Microsoft\jdk-11.0.18.10-hotspot\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\ProgramData\chocolatey\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files\Git\cmd;C:\Program Files\Git\usr\bin;C:\Program Files\7-Zip;C:\Program Files\WinRAR;C:\Program Files\nodejs;C:\AndroidSDK\platform-tools;C:\Users\Aorus PC\AppData\Local\Programs\Python\Python38\Scripts;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Users\Aorus PC\AppData\Local\Programs\Python\Python38\Scripts;C:\Users\Aorus PC\AppData\Local\Programs\Python\Python38;C:\Users\Aorus PC\AppData\Local\Microsoft\WindowsApps;C:\Users\Aorus PC\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Aorus PC\AppData\Roaming\npm;C:\Users\Aorus PC\AppData\Local\atom\bin;C:\Users\Aorus PC\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Microsoft\jdk-11.0.18.10-hotspot;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  18.17.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: EPERM: operation not permitted, unlink 'H:\backend\server_2\new\node_modules\bcrypt\lib\binding\napi-v3\bcrypt_lib.node'
+
+npm manifest: 
+  {
+    "name": "server",
+    "version": "1.0.0",
+    "description": "",
+    "main": "server.js",
+    "type": "module",
+    "scripts": {
+      "dev": "Set NODE_ENV=Development&& nodemon server.js",
+      "start": "Set NODE_ENV=Development&& node server.js",
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+ssh://git@github.com/ProgramerSalar/React-native-Ecomerce-Frontend.git"
+    },
+    "engines": {
+      "node": ">=14.20.1"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/ProgramerSalar/React-native-Ecomerce-Frontend/issues"
+    },
+    "homepage": "https://github.com/ProgramerSalar/React-native-Ecomerce-Frontend#readme",
+    "dependencies": {
+      "bcrypt": "^5.1.1",
+      "cloudinary": "^1.40.0",
+      "cookie-parser": "^1.4.6",
+      "cors": "^2.8.5",
+      "datauri": "^4.1.0",
+      "dotenv": "^16.3.1",
+      "express": "^4.18.2",
+      "jsonwebtoken": "^9.0.2",
+      "mongodb": "^6.1.0",
+      "mongoose": "^7.5.2",
+      "multer": "^1.4.5-lts.1",
+      "nodemailer": "^6.9.5",
+      "nodemon": "^3.0.1",
+      "stripe": "^13.7.0",
+      "validator": "^13.11.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
