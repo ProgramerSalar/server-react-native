@@ -41,14 +41,6 @@ export const signup = asyncError(async (req, res, next) => {
   let user = await User.findOne({ email });
   if (user) return next(new ErrorHandler("User Already Exists", 400));
 
-  // req.file
-  // console.log(req.file)
-  // const file = getDataUri(req.file);
-  // console.log(file)
-  // Add Cloudanary
-  // const myCloud = await cloudanary.v2.uploader.upload(file.content)
-  // console.log(myCloud.secure_url)
-
   let avatar = undefined;
   if (req.file) {
     const file = getDataUri(req.file);
@@ -191,8 +183,6 @@ export const forgetpassword = asyncError(async (req, res, next) => {
     message: `Email send to ${user.email}`,
   });
 });
-
-
 
 export const resetpassword = asyncError(async (req, res, next) => {
   const { otp, password } = req.body;
